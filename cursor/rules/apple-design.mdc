@@ -1,0 +1,58 @@
+---
+description: Apple HIG-based design rules for any UI work (web, mobile, desktop): layout, type, color, dark mode, accessibility, motion, forms, navigation.
+globs: "**/*.{ts,tsx,js,jsx,vue,svelte,html,css,swift,dart,kt}"
+alwaysApply: false
+---
+
+# Apple design rules (stack-neutral)
+
+Reference: https://developer.apple.com/design/human-interface-guidelines/
+User's brand and instructions win. If a rule conflicts, follow the user and mention it in one line.
+Do not copy Apple trademarks, fonts or icons.
+
+## Principles
+Clarity, deference (content is the hero), depth with purpose, clear hierarchy, consistency, accessibility first, user control, instant feedback.
+
+## Layout
+- 4px scale: 4, 8, 12, 16, 20, 24, 32, 48, 64.
+- Mobile-first, flexible layout (flex/grid/clamp). No break at 320px or 200% text.
+- Safe areas: `env(safe-area-inset-*)`. Margins 16px phone, 24px tablet, centered max-width on desktop. Text lines 60-75 chars.
+- One primary action per screen.
+
+## Typography
+- Stack: `-apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, "Segoe UI", Roboto, sans-serif`.
+- Few text styles. Body 16-17px, nothing under 12px. Use rem/em. Hierarchy by size and weight. No thin weight on small text.
+
+## Color
+- Semantic tokens only (--bg, --text, --accent, --danger...).
+- Contrast 4.5:1 text, 3:1 large text and UI parts. Never color alone.
+- Dark mode from the start with `color-scheme: light dark` and its own tokens. Honor `prefers-contrast`.
+
+## Interaction
+- Touch target 44px (24px absolute floor), 12px spacing around bordered controls.
+- All states: default, hover, focus-visible, pressed, disabled, loading. Visible focus ring.
+- Verb labels. Destructive actions need confirm or undo. Gestures always have a visible alternative.
+- Full keyboard support. Do not hijack scroll, zoom or back.
+- Forms: visible labels, right input types, autocomplete, inline fix-it errors, keep input on error.
+
+## Navigation
+- Phone: bottom tab bar (3-5). Desktop: sidebar or top nav. Current location always clear. Modals short, closable, never stacked.
+
+## Liquid Glass / materials
+- Only on floating controls and navigation, never the content layer. No glass on glass. Use sparingly.
+- Legibility first. Clear glass only over rich media, add about 35% dim if media is bright.
+- Fallback for `prefers-reduced-transparency` and no `backdrop-filter`.
+
+## Icons and images
+- One icon family and weight. SVG. `alt` for meaningful images, `alt=""` for decorative. Sharp on retina.
+
+## Motion
+- 150-300ms, transform/opacity only. Respect `prefers-reduced-motion` (fade or none). No flashing over 3/sec. Autoplay must be pausable.
+
+## Copy and accessibility
+- Short, plain, verb-first. Errors say how to fix. Support localization and RTL (logical CSS).
+- Semantic HTML first, ARIA to fill gaps, accessible name on every control, headings in order.
+- Do not auto-dismiss UI on timers.
+
+## Before finishing
+Hierarchy clear, spacing on scale, no overflow at 320px, contrast OK in light and dark, 44px targets, all states, reduced motion and transparency handled, alt text and labels present.

@@ -1,0 +1,79 @@
+{
+  "name": "super-design-skills",
+  "version": "1.0.0",
+  "note": "Upstream skills from the MadeToScale '7 Claude Design Skills' guide. They belong to their authors. This repo does not copy their code; install.sh fetches them from the original repos.",
+  "install_order": [
+    "taste-skill",
+    "impeccable",
+    "designlang",
+    "react-bits",
+    "gsap-skills",
+    "playwright-cli",
+    "transitions-dev"
+  ],
+  "upstream": [
+    {
+      "id": "taste-skill",
+      "name": "Taste Skill",
+      "author": "Leon",
+      "role": "Art direction, reference images, browser check",
+      "kind": "agent-skill",
+      "order": 1,
+      "repo": "https://github.com/Leonxlnx/taste-skill.git"
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "author": "Paul Bakaus",
+      "role": "Design vocabulary, critique and audit",
+      "kind": "agent-skill",
+      "order": 2,
+      "repo": "https://github.com/pbakaus/impeccable.git"
+    },
+    {
+      "id": "designlang",
+      "name": "designlang (design-extract)",
+      "author": "Manav Arya",
+      "role": "Extract a site's design system",
+      "kind": "mcp-tool",
+      "order": 3,
+      "repo": "https://github.com/Manavarya09/design-extract.git"
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "author": "David Haz",
+      "role": "Animated React / Next.js components",
+      "kind": "component-library",
+      "order": 4,
+      "repo": "https://github.com/DavidHDev/react-bits.git"
+    },
+    {
+      "id": "gsap-skills",
+      "name": "GSAP Skills",
+      "author": "GreenSock",
+      "role": "Official GSAP animation skills",
+      "kind": "agent-skill",
+      "order": 5,
+      "repo": "https://github.com/greensock/gsap-skills.git"
+    },
+    {
+      "id": "playwright-cli",
+      "name": "Playwright CLI",
+      "author": "Microsoft",
+      "role": "Browser automation and testing for the agent",
+      "kind": "cli-tool",
+      "order": 6,
+      "repo": "https://github.com/microsoft/playwright-cli.git"
+    },
+    {
+      "id": "transitions-dev",
+      "name": "transitions.dev",
+      "author": "Jakub Antalík",
+      "role": "43+ UI transitions and a motion skill",
+      "kind": "motion-library",
+      "order": 7,
+      "repo": "https://github.com/jakubantalik/transitions.dev.git"
+    }
+  ]
+}
