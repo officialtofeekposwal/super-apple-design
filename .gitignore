@@ -9,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 # Upstream cache
 upstream/
-.super-design-skills/
+.super-apple-design/
 # Build and test artifacts
 dist/
 build/

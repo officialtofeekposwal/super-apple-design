@@ -1,4 +1,4 @@
-# Super Design Skills
+# Super Apple Design
 
 A universal design skill pack for AI coding tools (Claude Code, Antigravity, Cursor, Codex and others). It helps the agent build any website, web app or software UI with strong design and accessibility, by combining:
 
@@ -13,8 +13,8 @@ The 7 upstream skills belong to their authors. This repo does not copy their cod
 ## Quick install
 
 ```bash
-git clone https://github.com/<your-username>/super-design-skills.git
-cd super-design-skills
+git clone https://github.com/officialtofeekposwal/super-apple-design.git
+cd super-apple-design
 chmod +x install.sh
 
 # Claude Code, all projects
@@ -90,7 +90,7 @@ Suggested order: Taste Skill, Impeccable, then designlang, React Bits, GSAP Skil
 ## Repo layout
 
 ```
-super-design-skills/
+super-apple-design/
   skills/
     apple-design-universal/SKILL.md
     design-workflow/SKILL.md

@@ -1,5 +1,5 @@
 {
-  "name": "super-design-skills",
+  "name": "super-apple-design",
   "version": "1.0.0",
   "note": "Upstream skills from the MadeToScale '7 Claude Design Skills' guide. They belong to their authors. This repo does not copy their code; install.sh fetches them from the original repos.",
   "install_order": [

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# super-design-skills installer
+# super-apple-design installer
 #
 # Usage:
 #   ./install.sh --target claude|antigravity|cursor|all [--project|--global] [--with-upstream] [--dry-run]
@@ -16,7 +16,7 @@ TARGET="claude"
 SCOPE="global"
 UPSTREAM=0
 DRY=0
-CACHE="${SDS_CACHE:-$HOME/.super-design-skills/upstream}"
+CACHE="${SDS_CACHE:-$HOME/.super-apple-design/upstream}"
 
 usage() { sed -n '2,11p' "$0" | sed 's/^# \{0,1\}//'; }
 
@@ -102,7 +102,7 @@ install_cursor() {
   say "apple-design.mdc -> $dest"
 }
 
-echo "super-design-skills | target=$TARGET scope=$SCOPE upstream=$UPSTREAM dry-run=$DRY"
+echo "super-apple-design | target=$TARGET scope=$SCOPE upstream=$UPSTREAM dry-run=$DRY"
 if [[ "$TARGET" == "all" ]]; then TARGETS="claude antigravity cursor"; else TARGETS="$TARGET"; fi
 
 for t in $TARGETS; do
