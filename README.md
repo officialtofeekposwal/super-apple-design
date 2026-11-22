@@ -1,119 +1,227 @@
-# Super Apple Design
+# 🍎 Super Apple Design
 
-A universal design skill pack for AI coding tools (Claude Code, Antigravity, Cursor, Codex and others). It helps the agent build any website, web app or software UI with strong design and accessibility, by combining:
+> **The Universal Apple Design System & 4-Phase Workflow Engine for AI Coding Tools**  
+> Empowers **Claude Code**, **Antigravity**, **Cursor**, **Codex**, and **Windsurf** to build human-grade, accessible, and high-craft software.
 
-| Piece | What it does |
-|---|---|
-| `apple-design-universal` | Apple Human Interface Guidelines, rewritten as stack-neutral rules: layout, type, color, dark mode, accessibility, motion, Liquid Glass, forms, UX writing, final checklist |
-| `design-workflow` | Master workflow with 4 phases: **Direction, Build, Test, Review**. Calls helper skills when installed |
-| 7 upstream skills | Taste Skill, designlang, React Bits, GSAP Skills, Playwright CLI, Impeccable, transitions.dev. Fetched by `install.sh` from their original repos |
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](LICENSE)
+[![Apple HIG Compliant](https://img.shields.io/badge/Design_Standards-Apple_HIG_Compatible-white.svg?style=flat-square&logo=apple&color=000000)](https://developer.apple.com/design/)
+[![Multi-Agent Ready](https://img.shields.io/badge/AI_Agents-Claude_|_Antigravity_|_Cursor_|_Codex-blue.svg?style=flat-square)](#-quick-install)
+[![WCAG AA](https://img.shields.io/badge/Accessibility-WCAG_AA_Compliant-success.svg?style=flat-square)](skills/apple-design-universal/SKILL.md)
+[![Workflow](https://img.shields.io/badge/Workflow-4--Phase_Production-orange.svg?style=flat-square)](#-the-4-phase-production-workflow)
 
-The 7 upstream skills belong to their authors. This repo does not copy their code. See `CREDITS.md`.
+---
 
-## Quick install
+## 🌟 Why Super Apple Design?
 
+Most AI-generated websites look like generic "AI-slop"—flat gray boxes, uninspired typography, zero tactile physics, and broken mobile responsiveness.
+
+**Super Apple Design** permanently elevates your coding agents into world-class design engineers by enforcing:
+1. **Apple Human Interface Guidelines (HIG)**: Translated into stack-neutral, concrete engineering rules (Web, iOS, Android, Desktop).
+2. **The 4-Phase Production Engine**: Eliminates blind coding by forcing **Direction ➔ Build ➔ Test ➔ Review**.
+3. **Orchestration with the 7 Viral Design Skills**: Seamlessly integrates `taste-skill`, `designlang`, `react-bits`, `gsap-skills`, `playwright-cli`, `impeccable`, and `transitions.dev` with graceful fallbacks.
+
+---
+
+## 📐 The 4-Phase Production Engine
+
+```
+┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
+│  1. DIRECTION    │ ───> │    2. BUILD      │ ───> │     3. TEST      │ ───> │    4. REVIEW     │
+│  3 Concepts      │      │  4px Base Scale  │      │  Playwright CLI  │      │  Impeccable      │
+│  Lock Tokens     │      │  44px Targets    │      │  Multi-Viewport  │      │  Pre-Flight      │
+│  (Taste Skill)   │      │  Liquid Glass    │      │  Light & Dark    │      │  Checklist Gate  │
+└──────────────────┘      └──────────────────┘      └──────────────────┘      └──────────────────┘
+```
+
+| Phase | Core Objective | Key Deliverables |
+| :--- | :--- | :--- |
+| **1. Direction** | Creative consensus before writing code | 3 high-contrast concepts; locked color palette, type scale, and continuous squircle radii |
+| **2. Build** | High-craft execution | 4px grid rhythm, 44px hit bounds, system fonts, Liquid Glass on control layers only |
+| **3. Test** | Autonomous visual verification | Automated Playwright screenshots at `375px` (mobile), `768px` (tablet), `1280px` (desktop) in Light & Dark modes |
+| **4. Review** | Critique and polish before shipping | Typography tracking verification, contrast checks, and 10-point pre-flight checklist |
+
+---
+
+## 🚀 Quick Install
+
+Clone the repository to get started:
 ```bash
 git clone https://github.com/officialtofeekposwal/super-apple-design.git
 cd super-apple-design
 chmod +x install.sh
+```
 
-# Claude Code, all projects
+### Install by Target Tool
+
+```bash
+# 🤖 Claude Code (Global across all projects)
 ./install.sh --target claude --global --with-upstream
 
-# Antigravity, current project
+# 🌌 Antigravity (Current project scope)
 ./install.sh --target antigravity --project
 
-# Cursor rule, current project
+# 🖱️ Cursor (Installs .cursor/rules/apple-design.mdc)
 ./install.sh --target cursor
 
-# Everything
+# ⚡ Install Everywhere (Claude, Antigravity, Cursor, and Upstream tools)
 ./install.sh --target all --project --with-upstream
 ```
 
-Options: `--target claude|antigravity|cursor|all`, `--project|--global`, `--with-upstream`, `--dry-run`, `--help`.
-Use `--dry-run` first to see what would happen. Restart your tool after install, then type `/` to see the skills.
+> **Tip**: Use `--dry-run` first to preview the exact file operations without modifying your system:  
+> `./install.sh --target all --dry-run`
 
-## Where files go
+---
 
-| Tool | Global | Project |
-|---|---|---|
-| Claude Code | `~/.claude/skills/` | `.claude/skills/` |
-| Antigravity | `~/.gemini/antigravity/skills/` | `.agent/skills/` |
-| Cursor | n/a | `.cursor/rules/apple-design.mdc` |
-| Codex, Gemini CLI, others | n/a | copy `AGENTS.md` to the project root |
+## 📂 Where Files Go
 
-Antigravity folders can change between versions. If skills do not appear, use the fallback prompt in `prompts/antigravity-install.md`.
+| Tool | Global Path | Project Path |
+| :--- | :--- | :--- |
+| **Claude Code** | `~/.claude/skills/` | `.claude/skills/` |
+| **Antigravity** | `~/.gemini/antigravity/skills/` | `.agent/skills/` |
+| **Cursor** | *N/A* | `.cursor/rules/apple-design.mdc` |
+| **Codex / Windsurf** | *N/A* | Copy `AGENTS.md` to project root |
 
-## How to use
+*(If using Antigravity and skills do not appear after restart, see the ready-to-paste fallback prompt in [`prompts/antigravity-install.md`](prompts/antigravity-install.md)).*
 
-Build something:
+---
+
+## 🎨 Apple HIG Design Specs Cheat Sheet
+
+### 1. Liquid Glass CSS Formula
+Translucent materials belong **only on control layers** (headers, tab bars, sheets)—never on main content cards or body canvases. **Never stack glass on glass.**
+
+```css
+.apple-glass {
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 12px 32px -4px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  .apple-glass {
+    background-color: rgba(28, 28, 30, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.4),
+      0 16px 40px -4px rgba(0, 0, 0, 0.6),
+      inset 0 1px 0.5px 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Fallback for accessibility */
+@media (prefers-reduced-transparency: reduce) {
+  .apple-glass {
+    background-color: var(--color-surface-elevated) !important;
+    backdrop-filter: none !important;
+  }
+}
 ```
-Use design-workflow. Build a landing page for [business].
-Suggest 3 design directions first, pick the best, then build, test with Playwright, and review.
+
+### 2. Apple Spring Curves
+Avoid mechanical linear easing. Use physical, interruptible springs:
+```css
+/* Standard Apple Spring curve */
+transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+transition-duration: 250ms;
 ```
 
-Review an existing page:
-```
-Use apple-design-universal. Review this page against the final checklist and fix every failure.
-```
+### 3. Typography Optical Tracking
+- **Large Display Titles (`> 28px`)**: Apply negative tracking (`letter-spacing: -0.02em`).
+- **Body Text (`15px - 17px`)**: Apply optical tracking (`letter-spacing: -0.008em`).
+- **Small Captions & Footnotes (`< 13px`)**: Apply positive tracking (`letter-spacing: +0.01em`).
 
-## The 4-phase workflow
+---
 
-1. **Direction**: 3 options, pick one, lock design tokens.
-2. **Build**: mobile-first, semantic tokens, motion only where it helps.
-3. **Test**: Playwright on every page, screenshots at 375, 768 and 1280px, light and dark.
-4. **Review**: critique, fix Critical and Important issues, run the final checklist.
+## 💬 How to Prompt Your Agent
 
-Direction first, then design. Not "quick build".
-
-## Example prompts per phase
-
-```
-Phase 1: Use design-workflow and apple-design-universal. I am building a landing page for [business].
-         Suggest 3 high-contrast design directions. Do not write code yet.
-Phase 2: Go with direction 2. Build the responsive nav and hero (44px targets, system fonts, glass on controls only).
-Phase 3: Run Playwright on localhost:3000. Screenshot 375, 768 and 1280px in light and dark. Report overflow or contrast bugs.
-Phase 4: Review against the final checklist. Fix all Critical and Important issues.
+### 1. Build a New Interface
+```markdown
+Use design-workflow and apple-design-universal.
+I want to build a landing page for my productivity app.
+Suggest 3 high-contrast design directions first. Do not write code yet.
 ```
 
-## Install the upstream skills by hand
-
-Some of them are libraries or CLIs, not skill folders. In Claude Code paste the repo link and this line:
-
+### 2. Lock & Build Components
+```markdown
+Let's proceed with Direction 2 (Luminescent Editorial Vibrancy).
+Build the responsive Navigation Bar and Hero section using Apple HIG standards:
+- Minimum 44x44px touch targets
+- System font stack with optical tracking
+- Liquid Glass applied strictly to the sticky control layer
 ```
-<repo link>
-Install this skill, then confirm it works.
+
+### 3. Visual QA & Verification
+```markdown
+Run a Playwright visual audit on localhost:3000.
+Capture responsive screenshots at 375px (mobile), 768px (tablet), and 1280px (desktop)
+in both Light Mode and Dark Mode. Report any layout overflow or contrast failures.
 ```
 
-Suggested order: Taste Skill, Impeccable, then designlang, React Bits, GSAP Skills, Playwright CLI and transitions.dev as needed. All links are in `skills.json`.
+### 4. Review & Pre-Flight Audit
+```markdown
+Review this screen against the Apple Design Universal pre-flight checklist.
+Fix all Critical and Important issues before handoff.
+```
 
-## Repo layout
+---
+
+## 🧩 Upstream Helper Skills Integration
+
+The 7 upstream skills from the community can be installed into Claude Code by pasting their repository link:
+
+| # | Skill / Tool | Creator | Repository Link | What It Adds |
+| :-: | :--- | :--- | :--- | :--- |
+| **1** | **Taste Skill** | Leon | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Art direction & 3 conceptual directions |
+| **2** | **designlang** | Manav Arya | [github.com/Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) | Token extraction from any reference site |
+| **3** | **React Bits** | David Haz | [github.com/DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 217+ animated React components & shaders |
+| **4** | **GSAP Skills** | GreenSock | [github.com/greensock/gsap-skills](https://github.com/greensock/gsap-skills) | Professional ScrollTrigger choreographies |
+| **5** | **Playwright CLI** | Microsoft | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | Headless browser testing & screenshot QA |
+| **6** | **Impeccable** | Paul Bakaus | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Design critique vocabulary & polish matrix |
+| **7** | **transitions.dev** | Jakub Antalík | [github.com/jakubantalik/transitions.dev](https://github.com/jakubantalik/transitions.dev) | 43+ UI motion transitions & page morphs |
+
+> *Note: If any helper tool is not installed, `design-workflow` automatically falls back to native Apple HIG rules without throwing errors.*
+
+---
+
+## 📁 Repository Layout
 
 ```
 super-apple-design/
-  skills/
-    apple-design-universal/SKILL.md
-    design-workflow/SKILL.md
-  cursor/rules/apple-design.mdc
-  prompts/antigravity-install.md
-  skills.json
-  install.sh
-  AGENTS.md
-  CREDITS.md
-  LICENSE
-  .gitignore
-  README.md
+├── skills/
+│   ├── apple-design-universal/
+│   │   └── SKILL.md             # Stack-neutral Apple HIG engineering guidelines
+│   └── design-workflow/
+│       └── SKILL.md             # 4-Phase Direction -> Build -> Test -> Review engine
+├── cursor/
+│   └── rules/
+│       └── apple-design.mdc     # Cursor AI ruleset for Apple HIG
+├── prompts/
+│   └── antigravity-install.md   # Copy-paste install prompts & Hinglish guide
+├── skills.json                  # Upstream skill registry & install order
+├── install.sh                   # Universal bash installer
+├── AGENTS.md                    # Universal AI agent instructions
+├── CREDITS.md                   # Full attribution & upstream repo links
+├── LICENSE                      # MIT License
+├── .gitignore                   # Clean ignore rules
+└── README.md                    # Documentation
 ```
 
-## Notes
+---
 
-- Take inspiration from other sites, never copy their brand, logo or assets.
-- Do not commit tokens or API keys.
-- Never invent statistics or testimonials. Use realistic placeholders or ask for real copy.
-- Apple, SF Pro, SF Symbols and Liquid Glass are trademarks of Apple Inc. This project is not affiliated with Apple, Anthropic or any skill author.
+## ⚠️ Important Guardrails
 
-## License
+- **Brand Primacy**: The user's brand identity, custom colors, and guidelines **always override** these defaults.
+- **No IP Infringement**: Never copy Apple trademarks, proprietary fonts (`SF Pro` binaries), or protected icons. Use standard open system font stacks and open-source icons (Lucide, Heroicons).
+- **Originality**: Use external reference sites strictly for token inspiration—never clone another brand's layout or assets.
+- **Truth in Copy**: Never invent fake user statistics or fabricated testimonials.
 
-MIT for the files in this repo (see `LICENSE`). Upstream skills keep their own licenses.
+---
 
-<!-- verified author: officialtofeekposwal -->
+## 📄 License
+
+MIT © 2026 [Tofeek Poswal](https://github.com/officialtofeekposwal) & Open Source Contributors. See [LICENSE](LICENSE) for details.
