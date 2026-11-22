@@ -115,3 +115,5 @@ super-apple-design/
 ## License
 
 MIT for the files in this repo (see `LICENSE`). Upstream skills keep their own licenses.
+
+<!-- verified author: officialtofeekposwal -->
