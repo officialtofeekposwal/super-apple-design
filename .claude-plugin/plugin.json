@@ -1,0 +1,16 @@
+{
+  "name": "super-apple-design",
+  "version": "2.0.0",
+  "description": "Universal Apple Human Interface Guidelines and 4-Phase Design Workflow for Claude Code",
+  "author": {
+    "name": "Tofeek",
+    "url": "https://github.com/officialtofeekposwal"
+  },
+  "repository": "https://github.com/officialtofeekposwal/super-apple-design",
+  "skills": [
+    "./skills/apple-design-universal",
+    "./skills/design-workflow",
+    "./skills/liquid-glass-physics",
+    "./skills/apple-hig-components"
+  ]
+}

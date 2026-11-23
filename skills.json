@@ -1,79 +1,81 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "super-apple-design",
-  "version": "1.0.0",
-  "note": "Upstream skills from the MadeToScale '7 Claude Design Skills' guide. They belong to their authors. This repo does not copy their code; install.sh fetches them from the original repos.",
-  "install_order": [
-    "taste-skill",
-    "impeccable",
-    "designlang",
-    "react-bits",
-    "gsap-skills",
-    "playwright-cli",
-    "transitions-dev"
+  "version": "2.0.0",
+  "description": "The definitive Apple Human Interface Guidelines and 4-Phase Design Workflow engine for AI coding assistants (skills.sh compatible)",
+  "author": "Tofeek (@officialtofeekposwal)",
+  "repository": "https://github.com/officialtofeekposwal/super-apple-design",
+  "native_skills": [
+    {
+      "id": "apple-design-universal",
+      "path": "skills/apple-design-universal/SKILL.md",
+      "description": "Stack-neutral Apple HIG foundations (layout, typography, color, safe areas, accessibility)"
+    },
+    {
+      "id": "design-workflow",
+      "path": "skills/design-workflow/SKILL.md",
+      "description": "4-Phase production loop: Direction -> Build -> Test -> Review"
+    },
+    {
+      "id": "liquid-glass-physics",
+      "path": "skills/liquid-glass-physics/SKILL.md",
+      "description": "Tactile spring physics curves, shaders, and Liquid Glass backdrop formulas"
+    },
+    {
+      "id": "apple-hig-components",
+      "path": "skills/apple-hig-components/SKILL.md",
+      "description": "Cross-platform component blueprints for Web, React, Flutter, and SwiftUI"
+    }
   ],
-  "upstream": [
+  "upstream_orchestration": [
     {
       "id": "taste-skill",
       "name": "Taste Skill",
       "author": "Leon",
-      "role": "Art direction, reference images, browser check",
-      "kind": "agent-skill",
-      "order": 1,
-      "repo": "https://github.com/Leonxlnx/taste-skill.git"
-    },
-    {
-      "id": "impeccable",
-      "name": "Impeccable",
-      "author": "Paul Bakaus",
-      "role": "Design vocabulary, critique and audit",
-      "kind": "agent-skill",
-      "order": 2,
-      "repo": "https://github.com/pbakaus/impeccable.git"
+      "role": "Art direction & 3 contrasting visual concepts",
+      "repo": "https://github.com/Leonxlnx/taste-skill"
     },
     {
       "id": "designlang",
-      "name": "designlang (design-extract)",
+      "name": "designlang",
       "author": "Manav Arya",
-      "role": "Extract a site's design system",
-      "kind": "mcp-tool",
-      "order": 3,
-      "repo": "https://github.com/Manavarya09/design-extract.git"
+      "role": "Design token and palette extraction from reference URLs",
+      "repo": "https://github.com/Manavarya09/design-extract"
     },
     {
       "id": "react-bits",
       "name": "React Bits",
       "author": "David Haz",
-      "role": "Animated React / Next.js components",
-      "kind": "component-library",
-      "order": 4,
-      "repo": "https://github.com/DavidHDev/react-bits.git"
+      "role": "Animated interactive React components & physics shaders",
+      "repo": "https://github.com/DavidHDev/react-bits"
     },
     {
       "id": "gsap-skills",
       "name": "GSAP Skills",
       "author": "GreenSock",
-      "role": "Official GSAP animation skills",
-      "kind": "agent-skill",
-      "order": 5,
-      "repo": "https://github.com/greensock/gsap-skills.git"
+      "role": "Timeline scroll choreographies and spatial animation",
+      "repo": "https://github.com/greensock/gsap-skills"
     },
     {
       "id": "playwright-cli",
       "name": "Playwright CLI",
       "author": "Microsoft",
-      "role": "Browser automation and testing for the agent",
-      "kind": "cli-tool",
-      "order": 6,
-      "repo": "https://github.com/microsoft/playwright-cli.git"
+      "role": "Autonomous multi-viewport browser testing & screenshot QA",
+      "repo": "https://github.com/microsoft/playwright-cli"
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "author": "Paul Bakaus",
+      "role": "Design vocabulary, critique matrix, and typography review",
+      "repo": "https://github.com/pbakaus/impeccable"
     },
     {
       "id": "transitions-dev",
       "name": "transitions.dev",
-      "author": "Jakub Antalík",
-      "role": "43+ UI transitions and a motion skill",
-      "kind": "motion-library",
-      "order": 7,
-      "repo": "https://github.com/jakubantalik/transitions.dev.git"
+      "author": "Jakub Antalik",
+      "role": "43+ UI motion transitions & View Transitions API",
+      "repo": "https://github.com/jakubantalik/transitions.dev"
     }
   ]
 }

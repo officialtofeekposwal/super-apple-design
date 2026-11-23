@@ -1,58 +1,38 @@
 ---
-description: Apple HIG-based design rules for any UI work (web, mobile, desktop): layout, type, color, dark mode, accessibility, motion, forms, navigation.
-globs: "**/*.{ts,tsx,js,jsx,vue,svelte,html,css,swift,dart,kt}"
+description: Universal Apple Human Interface Guidelines and design standards for web, mobile, and software development.
+globs: *.{ts,tsx,js,jsx,vue,svelte,html,css,swift,dart,kt}
 alwaysApply: false
 ---
 
-# Apple design rules (stack-neutral)
+# 🍎 Apple Design Standards for Cursor
 
-Reference: https://developer.apple.com/design/human-interface-guidelines/
-User's brand and instructions win. If a rule conflicts, follow the user and mention it in one line.
-Do not copy Apple trademarks, fonts or icons.
+You are an expert design systems engineer applying **Apple Human Interface Guidelines (HIG)** standards to all interface code.
 
-## Principles
-Clarity, deference (content is the hero), depth with purpose, clear hierarchy, consistency, accessibility first, user control, instant feedback.
+## 🛡️ Overrides
+1. **User Brand Wins**: User branding, bespoke colors, and guidelines always supersede these defaults.
+2. **No Trademark Misuse**: Never copy Apple trademarks, icons, or proprietary font binaries.
 
-## Layout
-- 4px scale: 4, 8, 12, 16, 20, 24, 32, 48, 64.
-- Mobile-first, flexible layout (flex/grid/clamp). No break at 320px or 200% text.
-- Safe areas: `env(safe-area-inset-*)`. Margins 16px phone, 24px tablet, centered max-width on desktop. Text lines 60-75 chars.
-- One primary action per screen.
+## 📐 Layout & Spacing
+- **4px Base Scale (8pt Grid)**: All spacing must use `4px`, `8px`, `12px`, `16px`, `20px`, `24px`, `32px`, `48px`, or `64px`.
+- **Safe Areas**: Use `env(safe-area-inset-top)` / `bottom` / `left` / `right` for hardware notches and home indicators.
+- **Mobile First**: Design for `375px` baseline, expand to tablet (`768px`) and desktop (`1280px`).
 
-## Typography
-- Stack: `-apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, "Segoe UI", Roboto, sans-serif`.
-- Few text styles. Body 16-17px, nothing under 12px. Use rem/em. Hierarchy by size and weight. No thin weight on small text.
+## 🔤 Typography & Contrast
+- **System Font Stack**: Use native system fonts (`-apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif`).
+- **Rem Units & Optical Tracking**: Always express sizes in `rem`. Apply negative letter-spacing (`-0.02em`) to large display titles, positive (`+0.01em`) to small captions.
+- **WCAG Contrast**: Normal text $\ge$ 4.5:1; large text $\ge$ 3.0:1 against background.
+- **No Color Alone**: Never convey state or errors solely via color; always pair with icons or text labels.
 
-## Color
-- Semantic tokens only (--bg, --text, --accent, --danger...).
-- Contrast 4.5:1 text, 3:1 large text and UI parts. Never color alone.
-- Dark mode from the start with `color-scheme: light dark` and its own tokens. Honor `prefers-contrast`.
+## 🔘 Touch Targets & Controls
+- **Minimum Target Size**: All interactive elements must have at least **44x44px** hit area.
+- **5 Complete States**: Always define `default`, `hover`, `active` (scale 0.97), `focus-visible` (2px outline), and `disabled` (`opacity: 0.38`).
 
-## Interaction
-- Touch target 44px (24px absolute floor), 12px spacing around bordered controls.
-- All states: default, hover, focus-visible, pressed, disabled, loading. Visible focus ring.
-- Verb labels. Destructive actions need confirm or undo. Gestures always have a visible alternative.
-- Full keyboard support. Do not hijack scroll, zoom or back.
-- Forms: visible labels, right input types, autocomplete, inline fix-it errors, keep input on error.
+## 🧊 Liquid Glass & Materials
+- **Control Layer Only**: Place glass effects strictly on navigation headers, tab bars, floating action docks, or sheets. **NEVER on content/body canvases.**
+- **No Glass-on-Glass**: Never stack translucent glass surfaces on top of each other.
+- **Specular Border**: Frame glass with `1px solid rgba(255,255,255,0.45)` (light) / `0.12` (dark) and inset highlight (`inset 0 1px 0 rgba(255,255,255,0.85)`).
+- **Fallbacks**: Always include `@media (prefers-reduced-transparency: reduce)` with solid opaque surfaces.
 
-## Navigation
-- Phone: bottom tab bar (3-5). Desktop: sidebar or top nav. Current location always clear. Modals short, closable, never stacked.
-
-## Liquid Glass / materials
-- Only on floating controls and navigation, never the content layer. No glass on glass. Use sparingly.
-- Legibility first. Clear glass only over rich media, add about 35% dim if media is bright.
-- Fallback for `prefers-reduced-transparency` and no `backdrop-filter`.
-
-## Icons and images
-- One icon family and weight. SVG. `alt` for meaningful images, `alt=""` for decorative. Sharp on retina.
-
-## Motion
-- 150-300ms, transform/opacity only. Respect `prefers-reduced-motion` (fade or none). No flashing over 3/sec. Autoplay must be pausable.
-
-## Copy and accessibility
-- Short, plain, verb-first. Errors say how to fix. Support localization and RTL (logical CSS).
-- Semantic HTML first, ARIA to fill gaps, accessible name on every control, headings in order.
-- Do not auto-dismiss UI on timers.
-
-## Before finishing
-Hierarchy clear, spacing on scale, no overflow at 320px, contrast OK in light and dark, 44px targets, all states, reduced motion and transparency handled, alt text and labels present.
+## 🏃 Motion & Physics
+- **Springs**: Use Apple spring curves (`cubic-bezier(0.175, 0.885, 0.32, 1.275)`) with `150ms-350ms` duration.
+- **Accessibility**: Wrap positional animations in `@media (prefers-reduced-motion: no-preference)`.

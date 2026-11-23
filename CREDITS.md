@@ -1,26 +1,36 @@
-# Credits
+# 📜 Credits & Acknowledgments
 
-## Apple
-The guidance in `apple-design-universal` is a rewrite, in our own words, of ideas from Apple's Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines/
+This project stands on the shoulders of industry design systems and the open-source community.
 
-This project is **not affiliated with Apple**. Apple, SF Pro, SF Symbols and Liquid Glass are trademarks of Apple Inc.
+---
 
-## MadeToScale
-The list of 7 helper skills comes from the free "7 Claude Design Skills" setup guide by MadeToScale (not affiliated with Anthropic or the skill authors). YouTube: https://www.youtube.com/@madetoscale
+## 🍎 Apple Human Interface Guidelines (HIG)
+- The design principles, layout grids, typography scales, and material concepts in this repository are inspired by the public [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/).
+- **Disclaimer**: This open-source repository is completely independent and **not affiliated with, endorsed by, sponsored by, or associated with Apple Inc.**
+- "Apple", "iOS", "iPadOS", "macOS", "visionOS", "SF Pro", and "Liquid Glass" are trademarks or registered trademarks of Apple Inc. All referenced trademarks belong to their respective holders.
 
-## The 7 skills
-Each skill belongs to its creator. This repo does not include their code; `install.sh` fetches them from the original repos.
+---
 
-| Skill | Creator | Repo |
-|---|---|---|
-| Taste Skill | Leonxlnx | https://github.com/Leonxlnx/taste-skill |
-| designlang | Manavarya09 | https://github.com/Manavarya09/design-extract |
-| React Bits | DavidHDev | https://github.com/DavidHDev/react-bits |
-| GSAP Skills | GreenSock | https://github.com/greensock/gsap-skills |
-| Playwright CLI | Microsoft | https://github.com/microsoft/playwright-cli |
-| Impeccable | pbakaus | https://github.com/pbakaus/impeccable |
-| transitions.dev | jakubantalik | https://github.com/jakubantalik/transitions.dev |
+## 📖 MadeToScale Research Guide
+- Special acknowledgment to **MadeToScale** for researching and highlighting seven key developer skills for AI-assisted design workflows.
+- YouTube: [MadeToScale](https://www.youtube.com/@madetoscale)
+- Instagram: `@madetoscale2026`
 
-Please star and support the original repos, and check each repo's license before commercial use.
+---
 
-Claude Code install steps: https://code.claude.com/docs/en/quickstart
+## 🌟 The 7 Upstream Design Skills & Tools
+
+The 7 viral design tools referenced in this universal workflow belong entirely to their respective authors:
+
+| # | Skill / Tool | Creator | Repository URL | Primary Role |
+| :-: | :--- | :--- | :--- | :--- |
+| **1** | **Taste Skill** | Leon (`Leonxlnx`) | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Art direction, 3 contrasting concepts, reference curation |
+| **2** | **designlang** | Manav Arya (`Manavarya09`) | [github.com/Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) | Design system & token extraction via CLI & MCP |
+| **3** | **React Bits** | David Haz (`DavidHDev`) | [github.com/DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 217+ animated React & Next.js components & shaders |
+| **4** | **GSAP Skills** | GreenSock Team | [github.com/greensock/gsap-skills](https://github.com/greensock/gsap-skills) | Official AI skills for GreenSock animations & ScrollTrigger |
+| **5** | **Playwright CLI** | Microsoft (`microsoft`) | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | Autonomous browser automation, testing & screenshots |
+| **6** | **Impeccable** | Paul Bakaus (`pbakaus`) | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Design vocabulary, critique matrix & polish protocol |
+| **7** | **transitions.dev** | Jakub Antalik (`jakubantalik`) | [github.com/jakubantalik/transitions.dev](https://github.com/jakubantalik/transitions.dev) | 43+ UI motion transitions & View Transitions API |
+
+> **Note on Upstream Code**:  
+> To respect copyright and licenses, this repository does NOT bundle third-party code. Upstream skills are referenced by URL and installed dynamically via your coding assistant or `scripts/install.sh --with-upstream`.

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "super-apple-design-spacing-radii",
+  "version": "2.0.0",
+  "description": "4px grid spacing rhythm and continuous squircle curvature tokens",
+  "grid": {
+    "base": 4,
+    "scale": {
+      "1": { "px": 4, "rem": "0.25rem", "use": "Micro gaps, icon offsets" },
+      "2": { "px": 8, "rem": "0.5rem", "use": "Tag padding, inline control gaps" },
+      "3": { "px": 12, "rem": "0.75rem", "use": "Button internal padding, tight list rows" },
+      "4": { "px": 16, "rem": "1.0rem", "use": "Baseline card padding, standard screen gutters" },
+      "5": { "px": 20, "rem": "1.25rem", "use": "Comfortable container padding" },
+      "6": { "px": 24, "rem": "1.5rem", "use": "Section gutters, inter-card vertical gaps" },
+      "8": { "px": 32, "rem": "2.0rem", "use": "Major block margins, tablet gutters" },
+      "10": { "px": 40, "rem": "2.5rem", "use": "Large display dividers" },
+      "12": { "px": 48, "rem": "3.0rem", "use": "Desktop section rhythm" },
+      "16": { "px": 64, "rem": "4.0rem", "use": "Hero block padding" }
+    }
+  },
+  "touchTarget": {
+    "minWidth": 44,
+    "minHeight": 44,
+    "unit": "px",
+    "description": "Apple HIG physical minimum hit bounds for every interactive control"
+  },
+  "radii": {
+    "small": {
+      "px": 10,
+      "smoothing": "60%",
+      "use": "Badges, inline chips, status pills"
+    },
+    "medium": {
+      "px": 14,
+      "smoothing": "60%",
+      "use": "Standard buttons, text inputs, list items"
+    },
+    "large": {
+      "px": 20,
+      "smoothing": "60%",
+      "use": "Cards, table groups, popovers"
+    },
+    "xlarge": {
+      "px": 28,
+      "smoothing": "60%",
+      "use": "Modal sheets, dialog windows, floating control centers"
+    },
+    "container": {
+      "px": 38,
+      "smoothing": "60%",
+      "use": "visionOS spatial glass windows, prominent hero containers"
+    },
+    "full": {
+      "px": 9999,
+      "smoothing": "100%",
+      "use": "Capsule buttons, avatar rings, slider thumbs"
+    }
+  },
+  "safeAreas": {
+    "top": "env(safe-area-inset-top, 0px)",
+    "bottom": "env(safe-area-inset-bottom, 0px)",
+    "left": "env(safe-area-inset-left, 0px)",
+    "right": "env(safe-area-inset-right, 0px)"
+  }
+}

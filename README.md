@@ -192,23 +192,53 @@ The 7 upstream skills from the community can be installed into Claude Code by pa
 
 ```
 super-apple-design/
-├── skills/
-│   ├── apple-design-universal/
-│   │   └── SKILL.md             # Stack-neutral Apple HIG engineering guidelines
-│   └── design-workflow/
-│       └── SKILL.md             # 4-Phase Direction -> Build -> Test -> Review engine
-├── cursor/
+├── .claude-plugin/
+│   └── plugin.json                  # Claude Code plugin manifest
+├── .cursor/
 │   └── rules/
-│       └── apple-design.mdc     # Cursor AI ruleset for Apple HIG
+│       ├── apple-design.mdc         # Cursor HIG foundations rule
+│       └── design-workflow.mdc      # Cursor 4-phase production rule
+├── agents/                          # Specialized Agent Subsystems
+│   ├── apple-design-architect.md    # High-level system design & layout strategist
+│   ├── hig-accessibility-auditor.md # WCAG AA 4.5:1, keyboard nav, screen reader auditor
+│   ├── liquid-glass-engineer.md     # Shader, CSS backdrop, and tactile physics specialist
+│   └── visual-qa-tester.md          # Autonomous Playwright screenshot & viewport inspector
 ├── prompts/
-│   └── antigravity-install.md   # Copy-paste install prompts & Hinglish guide
-├── skills.json                  # Upstream skill registry & install order
-├── install.sh                   # Universal bash installer
-├── AGENTS.md                    # Universal AI agent instructions
-├── CREDITS.md                   # Full attribution & upstream repo links
-├── LICENSE                      # MIT License
-├── .gitignore                   # Clean ignore rules
-└── README.md                    # Documentation
+│   ├── antigravity-install.md       # Multi-language quickstart (Hinglish + English)
+│   ├── claude-code-install.md       # Claude Code CLI setup guide
+│   └── design-brief-generator.md    # Phase 1 Direction interactive questionnaire
+├── scripts/
+│   ├── install.sh                   # Universal bash installer for Linux/macOS
+│   ├── install.ps1                  # Native PowerShell installer for Windows
+│   ├── audit-design.py              # Automated design & accessibility linter
+│   └── playwright-viewport-test.js  # Headless multi-viewport screenshot runner (375, 768, 1280px)
+├── skills/
+│   ├── apple-design-universal/      # Master HIG Universal Specification
+│   │   ├── SKILL.md                 # Core rules (4px rhythm, typography, contrast, safe areas)
+│   │   ├── TOKENS.md                # Multi-stack tokens (CSS, Tailwind, Flutter, SwiftUI)
+│   │   ├── MATERIALS.md             # Liquid Glass, blur, noise, and shadow elevation formulas
+│   │   └── CHECKLIST.md             # 20-point pre-flight shipping gate
+│   ├── design-workflow/             # The 4-Phase Production Engine
+│   │   ├── SKILL.md                 # Direction -> Build -> Test -> Review loop
+│   │   ├── PHASES.md                # Detailed deliverables per phase
+│   │   └── UPSTREAM_ORCHESTRATION.md# Integration recipes for the 7 viral design skills
+│   ├── liquid-glass-physics/        # Dedicated Tactile & Spatial Physics Skill
+│   │   ├── SKILL.md                 # Spring curves, haptic timing, glass overlays, fallbacks
+│   │   └── SHADERS.md               # WebGL/GLSL, CSS filter, and Skia/Flutter shaders
+│   └── apple-hig-components/        # Stack-Specific Component Blueprints
+│       ├── SKILL.md                 # Navigation bars, segmented controls, modal sheets, cards
+│       ├── web-react-tailwind.md    # React 19 + Tailwind v4 snippets
+│       ├── flutter-compose.md       # Flutter Drift/Riverpod & Jetpack Compose recipes
+│       └── swiftui-native.md        # Native SwiftUI iOS/macOS patterns
+├── tokens/                          # Raw Machine-Readable Design Tokens
+│   ├── colors.json                  # Light & Dark semantic color palette
+│   ├── typography.json              # Type scales, weights, and letter-spacing
+│   └── spacing-radii.json           # 4px scale, squircle radius definitions
+├── AGENTS.md                        # Master agent behavioral rules & Ponytail decision ladder
+├── CREDITS.md                       # Full attribution & upstream repo links
+├── LICENSE                          # MIT License
+├── .gitignore                       # Clean ignore rules
+└── README.md                        # Documentation
 ```
 
 ---

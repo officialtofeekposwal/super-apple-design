@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "super-apple-design-typography",
+  "version": "2.0.0",
+  "description": "Apple HIG typography scale with optical tracking, responsive rem calculations, and line-height definitions",
+  "fontFamily": {
+    "system": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', -system-ui, sans-serif",
+    "mono": "ui-monospace, 'SF Mono', 'Menlo', 'Monaco', 'Cascadia Code', monospace"
+  },
+  "scale": {
+    "largeTitle": {
+      "rem": "2.125rem",
+      "px": 34,
+      "weight": "700",
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.022em",
+      "opticalContext": "Display headers on top-level views"
+    },
+    "title1": {
+      "rem": "1.75rem",
+      "px": 28,
+      "weight": "700",
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.019em",
+      "opticalContext": "Primary page title"
+    },
+    "title2": {
+      "rem": "1.375rem",
+      "px": 22,
+      "weight": "600",
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.015em",
+      "opticalContext": "Section container titles"
+    },
+    "title3": {
+      "rem": "1.25rem",
+      "px": 20,
+      "weight": "600",
+      "lineHeight": 1.35,
+      "letterSpacing": "-0.012em",
+      "opticalContext": "Group headers and card headings"
+    },
+    "headline": {
+      "rem": "1.0625rem",
+      "px": 17,
+      "weight": "600",
+      "lineHeight": 1.4,
+      "letterSpacing": "-0.010em",
+      "opticalContext": "High-emphasis list items and card titles"
+    },
+    "body": {
+      "rem": "1.0625rem",
+      "px": 17,
+      "weight": "400",
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.008em",
+      "opticalContext": "Standard readable content text"
+    },
+    "callout": {
+      "rem": "1rem",
+      "px": 16,
+      "weight": "400",
+      "lineHeight": 1.45,
+      "letterSpacing": "-0.005em",
+      "opticalContext": "Callouts, notifications, and metadata highlights"
+    },
+    "subheadline": {
+      "rem": "0.9375rem",
+      "px": 15,
+      "weight": "400",
+      "lineHeight": 1.4,
+      "letterSpacing": "0em",
+      "opticalContext": "Secondary body copy and input labels"
+    },
+    "footnote": {
+      "rem": "0.8125rem",
+      "px": 13,
+      "weight": "400",
+      "lineHeight": 1.35,
+      "letterSpacing": "+0.005em",
+      "opticalContext": "Timestamps, explanatory notes, and metadata"
+    },
+    "caption1": {
+      "rem": "0.75rem",
+      "px": 12,
+      "weight": "500",
+      "lineHeight": 1.3,
+      "letterSpacing": "+0.010em",
+      "opticalContext": "Tab bar labels, badges, and status pills"
+    },
+    "caption2": {
+      "rem": "0.6875rem",
+      "px": 11,
+      "weight": "400",
+      "lineHeight": 1.3,
+      "letterSpacing": "+0.015em",
+      "opticalContext": "Smallest ancillary indicators"
+    }
+  }
+}

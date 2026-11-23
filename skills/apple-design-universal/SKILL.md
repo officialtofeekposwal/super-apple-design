@@ -10,10 +10,14 @@ The ideas below are written in our own words. They come from Apple platforms but
 
 ## How to use
 1. Read "Core principles" and the section for what you are building.
-2. Build with the rules and code hints.
-3. Run the "Final checklist" before saying done. Fix every failure.
-4. **The user's brand and instructions win over these rules.** If they conflict, follow the user and say so in one line.
-5. Do not copy Apple trademarks, SF Pro font files, SF Symbols or app icons into a project unless the license allows it. Use system font stacks or open fonts.
+2. Cross-reference specialized guides:
+   - Tokens & Multi-Stack Theme setups: [TOKENS.md](TOKENS.md)
+   - Liquid Glass, Blur & Elevation formulas: [MATERIALS.md](MATERIALS.md)
+   - 20-Point Pre-Flight Shipping Gate: [CHECKLIST.md](CHECKLIST.md)
+3. Build with the rules and code hints.
+4. Run the [CHECKLIST.md](CHECKLIST.md) before saying done. Fix every failure.
+5. **The user's brand and instructions win over these rules.** If they conflict, follow the user and say so in one line.
+6. Do not copy Apple trademarks, SF Pro font files, SF Symbols or app icons into a project unless the license allows it. Use system font stacks or open fonts.
 
 ## Core principles
 - **Clarity**: each element has a clear job. Text is readable, icons are understood, nothing is decoration only.
