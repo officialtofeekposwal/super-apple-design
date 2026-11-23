@@ -286,6 +286,35 @@ Always respect accessibility preferences by immediately replacing positional mot
 }
 ```
 
+## Hallmark Anti-AI-Slop Laws & 3-Tier Quality Gates
+
+To prevent interfaces from looking generic, uninspired, or machine-generated, every screen must enforce Hallmark's 3-Tier Gate System:
+
+### 1. Tier 1: Floor Gates (Hard Blocker — Never Ships)
+A single violation blocks deployment:
+- **WCAG AA Contrast**: Normal text $\ge 4.5:1$, controls/large text $\ge 3:1$.
+- **Visible Keyboard Focus**: Distinct focus rings on all interactive elements (`:focus-visible`).
+- **Responsive Containment**: Zero horizontal overflow at $320\text{px}$ viewport width.
+- **Accessibility Fallbacks**: `@media (prefers-reduced-motion: reduce)` and `@media (prefers-reduced-transparency: reduce)`.
+- **Truth in Product**: Zero fabricated numbers, invented testimonials, or dummy statistics.
+
+### 2. Tier 2: Reflex Gates (The 7 AI Slop Tells — Prohibited by Default)
+AI models fall into habitual patterns. The following 7 tells are strictly prohibited:
+1. **The Purple Gradient**: Never use purple/indigo as a lazy background gradient (`from-purple-600 to-indigo-600`).
+2. **Gratuitous Eyebrows**: Do not place an all-caps badge above every single heading unless it communicates functional category metadata.
+3. **Widely Tracked Uppercase**: Avoid excessive letter-spacing on uppercase labels (`W I D E L Y  S P A C E D`).
+4. **Single-Colored Headline Word**: Never color exactly one word in a headline with accent color (`Build the <span class="text-blue-500">future</span>`).
+5. **Empty Bento Box Frames**: Do not create grids of decorative boxes holding generic filler or stock-photo placeholders.
+6. **Viewport-Missing Hero**: The hero section must communicate the product's job and fit cleanly without awkward clipping.
+7. **Dummy Forms**: Never add a fake newsletter signup or contact form that says "Thanks!" without an actual backend action or endpoint.
+
+### 3. Tier 3: Finish Gates (Apple HIG Tactile Craft)
+- Strict 4px spacing rhythm.
+- 44px physical hit bounds.
+- Continuous squircle corners (`corner-smoothing: 60%`).
+- Liquid Glass strictly on control surfaces with 1px inset specular borders (never glass-on-glass).
+- Apple harmonic spring physics (`cubic-bezier(0.25, 0.1, 0.25, 1)`).
+
 ## Final checklist
 - [ ] One clear primary action; hierarchy obvious at a glance
 - [ ] Spacing from the scale; no overflow at 320px; works at 200% text

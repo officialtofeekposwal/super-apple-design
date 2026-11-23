@@ -40,7 +40,15 @@ Adhere strictly to `skills/apple-design-universal/SKILL.md`:
 
 ---
 
-## 4. Pre-Flight Checklist
+## 4. Hallmark Anti-AI-Slop Laws & 3-Tier Quality Gates
+Never produce generic machine-like interfaces. Enforce Hallmark's gate tiers:
+- **Floor Gates (Never Ship)**: WCAG AA $\ge 4.5:1$, visible focus rings, reduced motion/transparency fallbacks, zero invented facts, zero horizontal scroll at 320px.
+- **Reflex Gates (The 7 Slop Tells)**: Prohibit purple gradient backgrounds, gratuitous all-caps eyebrow badges, widely tracked uppercase microcopy (`W I D E L Y`), single-colored headline words, empty bento frames, and non-functional dummy forms.
+- **Finish Gates**: Continuous squircles (60%), specular highlights on glass, harmonic spring curves, and optical font tracking.
+
+---
+
+## 5. Pre-Flight Checklist
 Before reporting a task complete or saying "Done", run this checklist:
 - [ ] 3 design directions were offered and one was confirmed.
 - [ ] Spacing aligns with the 4px scale.

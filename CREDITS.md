@@ -11,16 +11,14 @@ This project stands on the shoulders of industry design systems and the open-sou
 
 ---
 
-## 📖 MadeToScale Research Guide
-- Special acknowledgment to **MadeToScale** for researching and highlighting seven key developer skills for AI-assisted design workflows.
-- YouTube: [MadeToScale](https://www.youtube.com/@madetoscale)
-- Instagram: `@madetoscale2026`
+## 📖 Developer Community Research
+- Special acknowledgment to developer communities and researchers exploring multi-agent design workflows.
 
 ---
 
-## 🌟 The 7 Upstream Design Skills & Tools
+## 🌟 Upstream Viral Design Skills & Anti-Slop Tools
 
-The 7 viral design tools referenced in this universal workflow belong entirely to their respective authors:
+The upstream design tools referenced in this universal workflow belong entirely to their respective authors:
 
 | # | Skill / Tool | Creator | Repository URL | Primary Role |
 | :-: | :--- | :--- | :--- | :--- |
@@ -31,6 +29,7 @@ The 7 viral design tools referenced in this universal workflow belong entirely t
 | **5** | **Playwright CLI** | Microsoft (`microsoft`) | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | Autonomous browser automation, testing & screenshots |
 | **6** | **Impeccable** | Paul Bakaus (`pbakaus`) | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Design vocabulary, critique matrix & polish protocol |
 | **7** | **transitions.dev** | Jakub Antalik (`jakubantalik`) | [github.com/jakubantalik/transitions.dev](https://github.com/jakubantalik/transitions.dev) | 43+ UI motion transitions & View Transitions API |
+| **8** | **Hallmark** | Hassan El Mghari (`nutlope`) | [github.com/nutlope/hallmark](https://github.com/nutlope/hallmark) | Anti-AI-slop design engine, 3-tier quality gates (Floor, Reflex, Finish), browser sloplint |
 
 > **Note on Upstream Code**:  
 > To respect copyright and licenses, this repository does NOT bundle third-party code. Upstream skills are referenced by URL and installed dynamically via your coding assistant or `scripts/install.sh --with-upstream`.

@@ -1,39 +1,40 @@
-# 🚀 Apple Design 20-Point Pre-Flight Shipping Checklist
+# 🚀 Apple Design & Hallmark 3-Tier Pre-Flight Shipping Checklist
 
-> **Mandatory Quality Gate**: No agent or engineer may mark an interface, feature, or pull request as "complete" or "ready to ship" without passing all 20 verification criteria.
-
----
-
-## 📐 I. Layout, Touch & Spacing
-- [ ] **1. 4px Rhythm**: All margins, paddings, and heights align to the 4px scale (`4, 8, 12, 16, 20, 24, 32, 48, 64px`).
-- [ ] **2. 44px Touch Bounds**: Every clickable button, icon link, tab, and input provides at least `44x44px` hit area.
-- [ ] **3. Safe Area Insets**: Hardware notches, home indicators, and system navigation bars are properly padded using `env(safe-area-inset-*)`.
-- [ ] **4. Zero Horizontal Scroll**: Layout is fully contained at `320px`, `375px`, `768px`, and `1280px` viewports without accidental overflow.
-- [ ] **5. Optical Balance**: Icons are visually centered relative to adjacent text baselines, using square bounding boxes.
+> **Mandatory Quality Gate**: No agent or engineer may mark an interface, feature, or pull request as "complete" or "ready to ship" without passing all Tier 1 (Floor) and Tier 2 (Reflex) criteria.
 
 ---
 
-## 🔤 II. Typography & Contrast
-- [ ] **6. System Font Stack**: Uses native operating system typography (`-apple-system`, `SF Pro`, `Inter`, `system-ui`).
-- [ ] **7. Optical Tracking Rules**: Large titles (`> 28px`) use negative tracking (`-0.02em`); small captions (`< 13px`) use positive tracking (`+0.01em`).
-- [ ] **8. WCAG AA Contrast**: Normal text satisfies $\ge$ 4.5:1; display text and UI controls satisfy $\ge$ 3.0:1 in both Light and Dark modes.
-- [ ] **9. No Color Alone**: Status, errors, and validation states always pair color changes with an icon or clear text label.
-- [ ] **10. 200% Zoom Compatibility**: Text reflows cleanly and remains fully readable when browser font scaling is set to 200%.
+## 🛑 Tier 1: Floor Gates (Non-Negotiable · Never Ships)
+*A single violation halts deployment immediately.*
+- [ ] **1. WCAG AA Contrast**: Normal text satisfies $\ge$ 4.5:1; display text and UI controls satisfy $\ge$ 3.0:1 in both Light and Dark modes.
+- [ ] **2. Visible Keyboard Focus**: Distinct `:focus-visible` ring on every clickable and focusable element (`Tab` / `Shift+Tab`).
+- [ ] **3. 44px Hit Bounds**: Every clickable button, link, icon action, and input provides at least `44x44px` physical touch area.
+- [ ] **4. Zero Horizontal Scroll**: Layout is strictly contained at `320px`, `375px`, `768px`, and `1280px` viewports without accidental sideways overflow.
+- [ ] **5. Accessibility Fallbacks**: Both `@media (prefers-reduced-motion: reduce)` and `@media (prefers-reduced-transparency: reduce)` are verified and functional.
+- [ ] **6. Safe Area Insets**: Hardware notches, home bars, and dynamic status bars use `env(safe-area-inset-*)`.
+- [ ] **7. Truth in Product**: Zero fabricated numbers, invented testimonials, or fake placeholder statistics.
 
 ---
 
-## 🧊 III. Materials, Glass & Elevation
-- [ ] **11. Control Layer Exclusivity**: Liquid Glass is placed only on navigation headers, tab bars, sheets, and floating control docks.
-- [ ] **12. Zero Glass-on-Glass**: No translucent surface is stacked directly over another translucent surface.
-- [ ] **13. Specular Border Framing**: Every glass surface features a 1px continuous border with inset specular light reflection.
-- [ ] **14. Reduced Transparency Fallback**: Solid opaque fallback (`@media (prefers-reduced-transparency: reduce)`) is implemented and verified.
-- [ ] **15. Shadow Elevation Layering**: Shadows are diffused and natural, never harsh black silhouettes.
+## 🚫 Tier 2: Reflex Gates (Hallmark Anti-AI-Slop Checks)
+*Eliminates the 7 machine-generated tells that give AI away.*
+- [ ] **8. No Default Purple Gradient**: Prohibit generic `from-purple-600 to-indigo-600` backgrounds. Use authentic semantic palettes or locked project tokens.
+- [ ] **9. No Gratuitous Eyebrows**: Prohibit decorative all-caps pill badges floating above every section heading unless communicating functional metadata.
+- [ ] **10. No Widely Tracked Caps**: Prohibit unnatural `tracking-widest uppercase` microcopy (`W I D E L Y  S P A C E D`).
+- [ ] **11. No Single-Colored Headline Word**: Prohibit coloring exactly one word in a headline with primary accent (`<span class="text-blue-500">word</span>`).
+- [ ] **12. No Empty Bento Box Frames**: Prohibit grids of decorative cards containing placeholder icons, generic buzzwords, or missing functionality.
+- [ ] **13. Hero Lands Message**: The hero section clearly communicates the product's job and fits its viewport without awkward cropping.
+- [ ] **14. Functional Forms Only**: Prohibit dummy newsletter signup or contact forms that fail to submit or display fake success toasts without backend handling.
 
 ---
 
-## 🏃 IV. Motion, States & Accessibility
-- [ ] **16. Apple Spring Physics**: Transitions use natural spring curves (`cubic-bezier(0.25, 0.1, 0.25, 1)`) within `150ms-350ms`.
-- [ ] **17. Complete 5-State Coverage**: All interactive controls define `default`, `hover`, `active (scale: 0.97)`, `focus-visible`, and `disabled`.
-- [ ] **18. Reduced Motion Respect**: `@media (prefers-reduced-motion: reduce)` replaces all positional shifts with instant fades.
-- [ ] **19. Keyboard Navigation**: Every action is fully reachable and executable via `Tab`, `Shift+Tab`, `Enter`, and `Space`.
-- [ ] **20. Brand Overrides Intact**: The user's custom brand identity, bespoke colors, and tone have taken priority without being overwritten by generic defaults.
+## ✨ Tier 3: Finish Gates (Apple HIG Tactile Craft)
+*Fine-tuning craftsmanship and harmonic physics.*
+- [ ] **15. 4px Rhythm**: All margins, paddings, and heights align to the 4px base scale (`4, 8, 12, 16, 20, 24, 32, 48, 64px`).
+- [ ] **16. System Typography & Optical Tracking**: Native font stacks (`-apple-system`, `SF Pro`, `Inter`); large titles (`> 28px`) use negative tracking (`-0.02em`), captions use positive tracking (`+0.01em`).
+- [ ] **17. Continuous Squircles**: Card borders and modal sheets use Apple continuous squircle curvature (`corner-smoothing: 60%`).
+- [ ] **18. Control Layer Exclusivity**: Liquid Glass is placed only on navigation headers, tab bars, sheets, and floating control docks (never glass-on-glass).
+- [ ] **19. Specular Border Framing**: Every glass surface features a 1px border with inset specular light reflection.
+- [ ] **20. Apple Spring Physics**: Dynamic interactions use harmonic spring curves (`cubic-bezier(0.25, 0.1, 0.25, 1)`) within `150ms-350ms`.
+- [ ] **21. Complete 5-State Coverage**: All interactive controls define `default`, `hover`, `active (scale: 0.97)`, `focus-visible`, and `disabled`.
+- [ ] **22. Brand Overrides Intact**: The user's custom brand identity, bespoke colors, and guidelines have priority over generic defaults.

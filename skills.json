@@ -76,6 +76,13 @@
       "author": "Jakub Antalik",
       "role": "43+ UI motion transitions & View Transitions API",
       "repo": "https://github.com/jakubantalik/transitions.dev"
+    },
+    {
+      "id": "hallmark",
+      "name": "Hallmark",
+      "author": "Hassan El Mghari (@nutlope)",
+      "role": "Anti-AI-slop design engine, 3-tier quality gates (Floor, Reflex, Finish), and browser sloplint",
+      "repo": "https://github.com/nutlope/hallmark"
     }
   ]
 }

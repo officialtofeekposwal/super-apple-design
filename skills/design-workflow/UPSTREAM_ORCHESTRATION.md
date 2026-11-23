@@ -15,6 +15,7 @@
 | **5. Playwright CLI** | Microsoft | `https://github.com/microsoft/playwright-cli` | Autonomous headless browser screenshot runner & test audit |
 | **6. Impeccable** | Paul Bakaus | `https://github.com/pbakaus/impeccable` | Phase 4 Design vocabulary, critique matrix, and contrast audit |
 | **7. transitions.dev** | Jakub Antalík | `https://github.com/jakubantalik/transitions.dev` | 43+ UI motion transitions & View Transitions API |
+| **8. Hallmark** | Hassan El Mghari (`nutlope`) | `https://github.com/nutlope/hallmark` | Anti-AI-slop design engine, 3-tier quality gates (Floor, Reflex, Finish), browser sloplint |
 
 ---
 
@@ -61,4 +62,32 @@ Every agent must follow this rule:
 - **With `impeccable`**:
   ```markdown
   Run impeccable critique on the generated screen. Audit typographic rhythm, contrast ratios, and element alignment.
+  ```
+- **With `hallmark`**:
+  ```markdown
+  Run hallmark audit on the generated page to inspect for the 7 AI tells and verify the 3-Tier Quality Gates:
+  - Floor Gates: Zero contrast failures, active keyboard focus, reduced motion fallbacks, no broken viewports.
+  - Reflex Gates: Hunt and eliminate purple gradients, gratuitous eyebrow pills, tracked-caps, and single colored words.
+  - Finish Gates: Verify 4px rhythm, 44px hit bounds, and Liquid Glass specular edge framing.
+  ```
+
+---
+
+## 🛡️ Hallmark Anti-AI-Slop Command Patterns
+
+When Hallmark is installed, invoke these commands directly:
+- **Audit existing screen**:
+  ```markdown
+  /hallmark audit ./src/app
+  # or using the local linter:
+  python scripts/audit-design.py ./src
+  ```
+- **Redesign while preserving wiring & links**:
+  ```markdown
+  /hallmark redesign ./src/app
+  # Enforces that all links, form handlers, and data bindings remain intact (sloplint --kept).
+  ```
+- **Custom Mode (No Template / Pure Original Craft)**:
+  ```markdown
+  /hallmark custom "Build a spatial banking dashboard using Cupertino Dark glass tokens"
   ```

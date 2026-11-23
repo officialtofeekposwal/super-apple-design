@@ -18,7 +18,8 @@ Most AI-generated websites look like generic "AI-slop"—flat gray boxes, uninsp
 **Super Apple Design** permanently elevates your coding agents into world-class design engineers by enforcing:
 1. **Apple Human Interface Guidelines (HIG)**: Translated into stack-neutral, concrete engineering rules (Web, iOS, Android, Desktop).
 2. **The 4-Phase Production Engine**: Eliminates blind coding by forcing **Direction ➔ Build ➔ Test ➔ Review**.
-3. **Orchestration with the 7 Viral Design Skills**: Seamlessly integrates `taste-skill`, `designlang`, `react-bits`, `gsap-skills`, `playwright-cli`, `impeccable`, and `transitions.dev` with graceful fallbacks.
+3. **Hallmark Anti-AI-Slop Architecture**: Codified 3-tier quality gates (**Floor, Reflex, Finish**) that systematically eliminate the 7 machine-generated tells (no purple gradients, no gratuitous eyebrow pills, no tracked-caps, no single-word coloring, no empty bento frames).
+4. **Orchestration with Upstream Power Tools**: Seamlessly coordinates `hallmark`, `taste-skill`, `designlang`, `react-bits`, `gsap-skills`, `playwright-cli`, `impeccable`, and `transitions.dev` with graceful fallbacks.
 
 ---
 
@@ -172,19 +173,59 @@ Fix all Critical and Important issues before handoff.
 
 ## 🧩 Upstream Helper Skills Integration
 
-The 7 upstream skills from the community can be installed into Claude Code by pasting their repository link:
+The viral upstream skills from the developer community can be installed into your coding agent by pasting their repository link:
 
 | # | Skill / Tool | Creator | Repository Link | What It Adds |
 | :-: | :--- | :--- | :--- | :--- |
-| **1** | **Taste Skill** | Leon | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Art direction & 3 conceptual directions |
-| **2** | **designlang** | Manav Arya | [github.com/Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) | Token extraction from any reference site |
-| **3** | **React Bits** | David Haz | [github.com/DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 217+ animated React components & shaders |
-| **4** | **GSAP Skills** | GreenSock | [github.com/greensock/gsap-skills](https://github.com/greensock/gsap-skills) | Professional ScrollTrigger choreographies |
-| **5** | **Playwright CLI** | Microsoft | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | Headless browser testing & screenshot QA |
-| **6** | **Impeccable** | Paul Bakaus | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Design critique vocabulary & polish matrix |
-| **7** | **transitions.dev** | Jakub Antalík | [github.com/jakubantalik/transitions.dev](https://github.com/jakubantalik/transitions.dev) | 43+ UI motion transitions & page morphs |
+| **1** | **Hallmark** | Hassan El Mghari (`nutlope`) | [github.com/nutlope/hallmark](https://github.com/nutlope/hallmark) | Anti-AI-slop design engine, 3-tier gates & browser sloplint |
+| **2** | **Taste Skill** | Leon | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Art direction & 3 conceptual directions |
+| **3** | **designlang** | Manav Arya | [github.com/Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) | Token extraction from any reference site |
+| **4** | **React Bits** | David Haz | [github.com/DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 217+ animated React components & shaders |
+| **5** | **GSAP Skills** | GreenSock | [github.com/greensock/gsap-skills](https://github.com/greensock/gsap-skills) | Professional ScrollTrigger choreographies |
+| **6** | **Playwright CLI** | Microsoft | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | Headless browser testing & screenshot QA |
+| **7** | **Impeccable** | Paul Bakaus | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Design critique vocabulary & polish matrix |
+| **8** | **transitions.dev** | Jakub Antalík | [github.com/jakubantalik/transitions.dev](https://github.com/jakubantalik/transitions.dev) | 43+ UI motion transitions & page morphs |
 
 > *Note: If any helper tool is not installed, `design-workflow` automatically falls back to native Apple HIG rules without throwing errors.*
+
+---
+
+## 🛡️ Hallmark Anti-AI-Slop 3-Tier Quality Gates
+
+To guarantee interfaces never look machine-made or generic, every screen must clear three gate tiers:
+
+### 1. 🛑 Floor Gates (Hard Blocker — Never Ships)
+A single violation immediately blocks deployment:
+- **WCAG AA Contrast**: Body text $\ge 4.5:1$, large text and controls $\ge 3:1$.
+- **Visible Keyboard Focus**: Distinct `:focus-visible` ring on every interactive control.
+- **Physical Hit Bounds**: Minimum $44\times 44\text{px}$ touch targets.
+- **Responsive Containment**: Zero horizontal overflow at $320\text{px}$ viewport width.
+- **Accessibility Fallbacks**: Functional `prefers-reduced-motion` and `prefers-reduced-transparency`.
+- **Truth in Product**: Zero fake numbers, placeholder metrics, or fabricated testimonials.
+
+### 2. 🚫 Reflex Gates (The 7 AI Slop Tells — Prohibited by Default)
+1. **The Purple Gradient**: Ban default `from-purple-600 to-indigo-600` backgrounds.
+2. **Gratuitous Eyebrows**: Ban decorative all-caps badges above every section title.
+3. **Widely Tracked Uppercase**: Ban unnatural `tracking-widest uppercase` microcopy (`W I D E L Y`).
+4. **Single-Colored Headline Word**: Ban coloring exactly one word in a headline with accent color.
+5. **Empty Bento Box Frames**: Ban decorative grids of boxes holding generic icons or filler.
+6. **Viewport-Missing Hero**: Hero must clearly state what the product does and fit the viewport cleanly.
+7. **Dummy Forms**: Ban fake email or contact forms that fail to submit or trigger fake toasts.
+
+### 3. ✨ Finish Gates (Apple HIG Tactile Craft)
+- 4px spacing scale & continuous squircle corners (`corner-smoothing: 60%`).
+- Liquid Glass restricted to control layers with 1px inset specular borders (never glass-on-glass).
+- Harmonic spring physics (`cubic-bezier(0.25, 0.1, 0.25, 1)`).
+
+### Hallmark Commands
+```markdown
+# Audit an existing codebase for slop tells and gate failures
+python scripts/audit-design.py ./src
+
+# Or with Hallmark CLI installed:
+/hallmark audit ./src/app
+/hallmark redesign ./src/app    # Rebuilds layout while preserving wiring & links (sloplint --kept)
+```
 
 ---
 
