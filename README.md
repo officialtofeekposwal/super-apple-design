@@ -1,5 +1,9 @@
 <div align="center">
 
+<p align="center">
+  <img src="assets/hero-3d.svg" alt="Super Apple Design 3D Animated Hero" width="100%" />
+</p>
+
 # 🍎 Super Apple Design
 ### The Definitive Multi-Agent Apple Design System & Autonomous Production Engine
 
@@ -58,6 +62,10 @@ Most LLM coding agents produce generic, soulless interfaces: flat gray rectangle
 ## 🔄 The 4-Phase Production Engine
 
 Every user interface, screen, or software component follows an automated, gated quality loop:
+
+<p align="center">
+  <img src="assets/workflow-3d.svg" alt="The 4-Phase Production Engine 3D Animated Flow" width="100%" />
+</p>
 
 ```mermaid
 flowchart LR
@@ -145,6 +153,10 @@ Super Apple Design includes ready-to-use role definitions in `agents/`:
 ---
 
 ## 🎨 Apple HIG Design Formulas (Cheat Sheet)
+
+<p align="center">
+  <img src="assets/components-3d.svg" alt="Apple HIG 3D Interactive Floating Components" width="100%" />
+</p>
 
 ### Liquid Glass CSS
 ```css
